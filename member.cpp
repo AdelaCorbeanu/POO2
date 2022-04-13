@@ -13,9 +13,9 @@ member::member(std::string name, int age, bool gender, int year, int projects_nr
         year_joined(year), projects_nr(projects_nr), projects_done(std::move(projects)) {}
 
 void member::print(std::ostream &os) const  {
-
+    os << "I am " << this->getName() << ", member of the team since " << this->getYear();
     os << ". I worked on " << this->getNr() << " project" << (this->getNr() > 1 ? "s: " : ": ");
-    for (auto project : this->getProjects()) os << " " << project;os << "I am " << this->getName() << ", member of the team since " << this->getYear();
+    for (auto project : this->getProjects()) os << " " << project;
     os << ".";
 }
 
