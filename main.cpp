@@ -53,8 +53,9 @@ int main() {
     team::addPerson(std::make_shared<leader>(Leader4));
 
 
-    team::meetLeaders();
+
     team::meetMembers();
+    team::meetLeaders();
     std::cout << '\n' << '\n';
     team::meetTeam();
     std::cout << '\n' << '\n';
