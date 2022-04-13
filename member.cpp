@@ -79,11 +79,7 @@ role member::getRole() {
     return role::member;
 }
 
-member::member() : human() {
-    year_joined = 0;
-    projects_nr = 0;
-    projects_done = {};
-}
+member::member() : human(), year_joined(0), projects_nr(0), projects_done({}) {}
 
 int member::getNr() const {
     return this->projects_nr;

@@ -43,7 +43,6 @@ int main() {
     Leader4.setTask("sapa de lemn");
 
 
-    team Team;
     team::addPerson(Member1);
     team::addPerson(Leader1);
     team::addPerson(std::make_shared<member>(Member2));
@@ -83,5 +82,8 @@ int main() {
     catch (const std::exception &e) {
         std::cout << e.what() << '\n';
     }
+
+    delete Human1;
+    delete Human2;
     return 0;
 }
