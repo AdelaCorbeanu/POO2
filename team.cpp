@@ -15,12 +15,12 @@ void team::addPerson(const std::shared_ptr<human> &person) {
 
 void team::meetMembers() {
     for (const auto& member : team::getPeople())
-        if (member->getRole() == role::member) member->print(std::cout);
+        if (member->getRole() == role::member) member->print(std::cout), std::cout << '\n';
 }
 
 void team::meetLeaders() {
     for (const auto& leader : team::getPeople())
-        if (leader->getRole() == role::leader) leader->print(std::cout);
+        if (leader->getRole() == role::leader) leader->print(std::cout), std::cout << '\n';
 }
 
 int team::getNumber() {

@@ -31,7 +31,10 @@ public:
 
     void print(std::ostream &os) const override;
     friend std::istream &operator>> (std::istream &is, member &Member);
-    friend std::ostream &operator<< (std::ostream &os, const member &Member);
+    friend std::ostream &operator<< (std::ostream &os, const member &Member) {
+        Member.print(os);
+        return os;
+    }
     member &operator=(const member &member2);
 
     int getYear() const;

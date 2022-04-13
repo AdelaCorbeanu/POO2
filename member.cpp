@@ -19,10 +19,7 @@ void member::print(std::ostream &os) const  {
     os << ".";
 }
 
-std::ostream &operator<<(std::ostream &os, const member &Member) {
-    Member.print(os);
-    return os;
-}
+
 
 member &member::operator=(const member &member2) {
     (*this).human::operator=(member2);
