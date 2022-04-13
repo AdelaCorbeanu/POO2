@@ -17,10 +17,6 @@ void leader::print(std::ostream &os) const {
     os << ". My job is to make sure everything involving " << this->getTask() << " goes well";
 }
 
-std::ostream &operator<<(std::ostream &os, const leader &Leader) {
-    Leader.print(os);
-    return os;
-}
 
 leader &leader::operator=(const leader &leader2) {
     (*this).human::operator=(leader2);

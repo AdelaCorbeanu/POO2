@@ -20,7 +20,10 @@ public:
     void print(std::ostream &os) const override;
 
     friend std::istream &operator>> (std::istream &is, leader &Leader);
-    friend std::ostream &operator<< (std::ostream &os, const leader &Leader);
+    friend std::ostream &operator<< (std::ostream &os, const leader &Leader) {
+        Leader.print(os);
+        return os;
+    }
     leader &operator=(const leader &leader2);
 
     [[nodiscard]] int getYear() const;
@@ -33,7 +36,6 @@ public:
     ~leader() override;
 };
 
-std::ostream &operator<< (std::ostream &os, const leader &Leader);
 std::istream &operator>> (std::istream &is, leader &Leader);
 
 #endif //PISICI_LEADER_H

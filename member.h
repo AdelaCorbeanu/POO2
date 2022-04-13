@@ -51,7 +51,6 @@ public:
     ~member() override;
 };
 
-std::ostream &operator<<(std::ostream &os, const member &Member);                              // operatorul de afisare
 std::istream &operator>> (std::istream &is, member &Member);
 
 #endif //PISICI_MEMBER_H
