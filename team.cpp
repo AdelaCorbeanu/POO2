@@ -19,7 +19,7 @@ void team::meetMembers() {
 }
 
 void team::meetLeaders() {
-    for (const auto& leader : team::people)
+    for (const auto& leader : team::getPeople())
         if (leader->getRole() == role::leader) leader->print(std::cout), std::cout << '\n';
 }
 
