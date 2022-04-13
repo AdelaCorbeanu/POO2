@@ -7,7 +7,7 @@
 #include <algorithm>
 
 member::member(const member &new_member) : human(new_member),
-        year_joined(new_member.year_joined), projects_done(new_member.projects_done), projects_nr(new_member.projects_nr) {}
+                                           year_joined(new_member.year_joined), projects_nr(new_member.projects_nr), projects_done(new_member.projects_done) {}
 
 member::member(std::string name, int age, bool gender, int year, int projects_nr, std::vector<int> projects) :
         human(std::move(name), age, gender),
