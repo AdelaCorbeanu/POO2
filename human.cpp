@@ -51,6 +51,6 @@ std::istream &operator>>(std::istream &is, human *Human) {
     return is;
 }
 
-human::human() : age(0), gender(false) {}
+human::human() : name(""), age(0), gender(false) {}
 
 human::~human() = default;
