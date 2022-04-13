@@ -49,7 +49,7 @@ role leader::getRole() {
     return role::leader;
 }
 
-leader::leader() : human(), year_promoted(0) {}
+leader::leader() : human(), year_promoted(0), task("") {}
 
 std::istream &operator>>(std::istream &is, leader &Leader) {
     human *Human = &Leader;
