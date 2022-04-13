@@ -13,7 +13,7 @@ leader::leader(std::string name, int age, bool gender, int year, std::string tas
 leader::leader(const leader &new_leader) : human(new_leader), year_promoted(new_leader.year_promoted), task(new_leader.task) {}
 
 void leader::print(std::ostream &os) const {
-    os << "I am " << this->name << ", leader of the team since " << this->getYear();
+    os << "I am " << this->getName() << ", leader of the team since " << this->getYear();
     os << ". My job is to make sure everything involving " << this->getTask() << " goes well";
 }
 
