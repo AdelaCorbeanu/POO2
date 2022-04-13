@@ -23,7 +23,7 @@ public:
     friend std::ostream &operator<< (std::ostream &os, const leader &Leader);
     leader &operator=(const leader &leader2);
 
-    int getYear() const;
+    [[nodiscard]] int getYear() const;
     std::string getTask() const;
     role getRole() override;
 

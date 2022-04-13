@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "member.h"
-#include <algorithm>
 
 member::member(const member &new_member) : human(new_member),
                                            year_joined(new_member.year_joined), projects_nr(new_member.projects_nr), projects_done(new_member.projects_done) {}
